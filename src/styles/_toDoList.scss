@@ -1,0 +1,21 @@
+.todolist {
+  .tasks {
+    margin: 1rem;
+  }
+
+  .sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button {
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+      width: 15%;
+      margin: 0.25rem 0rem;
+      border: none;
+      color: white;
+      background-color: #6c757d;
+    }
+  }
+}

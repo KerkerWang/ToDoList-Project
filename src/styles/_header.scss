@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #087990;
+  align-items: center;
+  h1 {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0rem;
+    font-size: 3rem;
+    background-color: #087990;
+    color: white;
+  }
+  .clear {
+    background-color: #087990;
+    display: flex;
+    justify-content: center;
+    button {
+      color: white;
+      padding: 0.25rem 0.5rem;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #ca6510;
+      margin-bottom: 0.75rem;
+    }
+  }
+}

@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #0aa2c0;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome div {
+  padding-bottom: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome div h3 {
+  font-size: 2.5rem;
+  color: white;
+}
+.welcome div .nameContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+.welcome div .nameContainer input {
+  border: none;
+  background-color: white;
+  font-size: 1.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+.welcome div .nameContainer button {
+  font-size: 1.75rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #6c757d;
+  color: white;
+  margin: 0rem 0.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #087990;
+  align-items: center;
+}
+.header h1 {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0rem;
+  font-size: 3rem;
+  background-color: #087990;
+  color: white;
+}
+.header .clear {
+  background-color: #087990;
+  display: flex;
+  justify-content: center;
+}
+.header .clear button {
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ca6510;
+  margin-bottom: 0.75rem;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+.add div {
+  display: flex;
+  margin: 1rem;
+}
+.add div input {
+  padding: 0.5rem 0.25rem;
+  margin: 0rem 0.15rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: white;
+}
+.add div button {
+  padding: 0.5rem 0.75rem;
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+  background-color: #087990;
+}
+.add div .number {
+  text-align: center;
+}
+
+.todolist .tasks {
+  margin: 1rem;
+}
+.todolist .sort {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.todolist .sort button {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  width: 15%;
+  margin: 0.25rem 0rem;
+  border: none;
+  color: white;
+  background-color: #6c757d;
+}
+
+.task .alreadyDone {
+  opacity: 0.5;
+}
+.task .alreadyDone p {
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+.task div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0.35rem 0rem;
+  -webkit-animation: scaleUp 0.2s forwards;
+          animation: scaleUp 0.2s forwards;
+  transition: all 0.15s ease;
+}
+.task div p {
+  font-size: 1.5rem;
+  background-color: white;
+  text-align: justify;
+}
+.task div .thing {
+  width: 20%;
+  padding-left: 0.5rem;
+}
+.task div .month {
+  width: 3%;
+  text-align: right;
+}
+.task div .date {
+  width: 3%;
+  text-align: left;
+}
+.task div button {
+  font-size: 1.5rem;
+  border: none;
+  margin: 0rem 0.2rem;
+  padding: 0.35rem 0.65rem;
+}
+.task div .done {
+  background-color: #198754;
+  color: white;
+}
+.task div .remove {
+  background-color: #dc3545;
+  color: white;
+}
+
+@-webkit-keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleDown {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes scaleDown {
+  to {
+    transform: scale(0);
+  }
+}/*# sourceMappingURL=style.css.map */

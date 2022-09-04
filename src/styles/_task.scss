@@ -1,0 +1,63 @@
+.task {
+  .alreadyDone {
+    opacity: 0.5;
+    p {
+      text-decoration: line-through;
+      text-decoration-thickness: 0.2rem;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0.35rem 0rem;
+    animation: scaleUp 0.2s forwards;
+    transition: all 0.15s ease;
+    p {
+      font-size: 1.5rem;
+      background-color: white;
+      text-align: justify;
+    }
+    .thing {
+      width: 20%;
+      padding-left: 0.5rem;
+    }
+    .month {
+      width: 3%;
+      text-align: right;
+    }
+    .date {
+      width: 3%;
+      text-align: left;
+    }
+    button {
+      font-size: 1.5rem;
+      border: none;
+      margin: 0rem 0.2rem;
+      padding: 0.35rem 0.65rem;
+    }
+    .done {
+      background-color: #198754;
+      color: white;
+    }
+    .remove {
+      background-color: #dc3545;
+      color: white;
+    }
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleDown {
+  to {
+    transform: scale(0);
+  }
+}
