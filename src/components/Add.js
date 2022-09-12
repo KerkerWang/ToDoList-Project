@@ -21,6 +21,8 @@ const Add = ({ list, setList }) => {
       return window.alert("Please enter valid month.");
     if (form.children[2].value == "")
       return window.alert("Please enter valid date.");
+    if (thing.length >= 10)
+      return window.alert("The length of task should be less than 10.");
 
     if (month == 2 && (date == 30 || date == 31)) {
       window.alert("Please enter a valid date.");
@@ -56,22 +58,24 @@ const Add = ({ list, setList }) => {
   return (
     <div className="add">
       <div>
-        <input onChange={thingChangeHandler} type="text" />
-        <input
-          onChange={monthChangeHandler}
-          type="number"
-          min="1"
-          max="12"
-          className="number"
-        />
-        <input
-          onChange={dateChangeHandler}
-          type="number"
-          min="1"
-          max="31"
-          className="number"
-        />
-        <button onClick={addHandler}>Add into List</button>
+        <div className="inputContainer">
+          <input onChange={thingChangeHandler} type="text" />
+          <input
+            onChange={monthChangeHandler}
+            type="number"
+            min="1"
+            max="12"
+            className="number"
+          />
+          <input
+            onChange={dateChangeHandler}
+            type="number"
+            min="1"
+            max="31"
+            className="number"
+          />
+          <button onClick={addHandler}>Add into List</button>
+        </div>
       </div>
     </div>
   );

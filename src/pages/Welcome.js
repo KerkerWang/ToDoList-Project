@@ -13,13 +13,17 @@ const Welcome = ({ username, setUsername }) => {
     setNameInput(e.target.value);
   };
   const submitHandler = () => {
-    localStorage.setItem(
-      "nameOfTodoList",
-      JSON.stringify({ username: nameInput })
-    );
-    setUsername(JSON.parse(localStorage.getItem("nameOfTodoList")).username);
-    window.alert("Now you're redirected to ToDo List page.");
-    navigate("/todolist");
+    if (nameInput.length >= 16) {
+      return window.alert("The length of your name should be less than 15.");
+    } else {
+      localStorage.setItem(
+        "nameOfTodoList",
+        JSON.stringify({ username: nameInput })
+      );
+      setUsername(JSON.parse(localStorage.getItem("nameOfTodoList")).username);
+      window.alert("Now you're redirected to ToDo List page.");
+      navigate("/todolist");
+    }
   };
 
   return (

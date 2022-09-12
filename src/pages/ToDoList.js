@@ -13,9 +13,9 @@ const ToDoList = ({ username, setUsername }) => {
     localStorage.setItem("list", JSON.stringify(sortedArr));
     const divSort = e.target.parentElement;
     const divTodoList = divSort.parentElement;
-    let len = divTodoList.children[2].children.length;
+    let len = divTodoList.children[1].children.length;
     for (let i = 0; i < len; i++) {
-      divTodoList.children[2].children[0].remove();
+      divTodoList.children[1].children[0].remove();
     }
     navigate("/");
   };
@@ -68,12 +68,16 @@ const ToDoList = ({ username, setUsername }) => {
   return (
     <div className="todolist">
       <Add list={list} setList={setList} />
-      <div className="sort">
-        <button onClick={sortHandler}>Sort by time</button>
-      </div>
-      <div className="tasks">
-        {list &&
-          list.map((n) => <Task task={n} key={n.key} id={n.key} list={list} />)}
+      <div className="sortAndTasks">
+        <div className="sort">
+          <button onClick={sortHandler}>Sort by time</button>
+        </div>
+        <div className="tasks">
+          {list &&
+            list.map((n) => (
+              <Task task={n} key={n.key} id={n.key} list={list} />
+            ))}
+        </div>
       </div>
     </div>
   );

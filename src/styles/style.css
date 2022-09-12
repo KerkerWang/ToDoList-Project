@@ -6,117 +6,310 @@
 }
 
 .welcome {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 600px;
 }
 .welcome div {
-  padding-bottom: 30vh;
+  margin-top: 5rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .welcome div h3 {
-  font-size: 2.5rem;
   color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 .welcome div .nameContainer {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
+  justify-content: center;
+  margin: 0;
 }
 .welcome div .nameContainer input {
   border: none;
   background-color: white;
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   padding: 0.25rem 0.5rem;
+  margin: 0 0.5rem;
   border-radius: 5px;
 }
 .welcome div .nameContainer button {
-  font-size: 1.75rem;
-  padding: 0.25rem 0.5rem;
   border: none;
-  border-radius: 5px;
   background-color: #6c757d;
   color: white;
-  margin: 0rem 0.5rem;
+  font-size: 1.65rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
 }
 
+@media screen and (max-width: 600px) {
+  .welcome {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 320px;
+  }
+  .welcome div {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome div h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.65rem;
+    margin-bottom: 0.5rem;
+  }
+  .welcome div .nameContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }
+  .welcome div .nameContainer input {
+    border: none;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.3rem;
+    margin-right: 0.25rem;
+    border-radius: 3px;
+  }
+  .welcome div .nameContainer button {
+    border: none;
+    background-color: #6c757d;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.3rem;
+    border-radius: 3px;
+  }
+}
 .header {
+  background-color: #087990;
+  display: flex;
+  padding-bottom: 0.75rem;
+}
+.header .title {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #087990;
+}
+.header .title .h1 {
   display: flex;
   flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
   background-color: #087990;
-  align-items: center;
 }
-.header h1 {
-  margin-top: 0.5rem;
-  padding: 0.5rem 0rem;
-  font-size: 3rem;
+.header .title .h1 h1 {
   background-color: #087990;
+  margin: 0 auto;
   color: white;
+  padding: 0.35rem 0;
+  font-size: 3.25rem;
 }
-.header .clear {
-  background-color: #087990;
-  display: flex;
-  justify-content: center;
-}
-.header .clear button {
+.header .title .h1 button {
+  border: none;
+  align-self: flex-start;
+  background-color: #ca6510;
   color: white;
   padding: 0.25rem 0.5rem;
   font-size: 1.5rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #ca6510;
-  margin-bottom: 0.75rem;
+  border-radius: 4px;
 }
 
+@media screen and (max-width: 600px) {
+  .header {
+    background-color: #087990;
+    display: flex;
+    width: 100vw;
+    padding: 0.75rem 0;
+  }
+  .header .title {
+    width: 320px;
+    margin: 0 auto;
+    background-color: #087990;
+  }
+  .header .title .h1 {
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #087990;
+  }
+  .header .title .h1 h1 {
+    font-size: 2rem;
+  }
+  .header .title .h1 button {
+    border: none;
+    font-size: 1.3rem;
+  }
+}
 .add {
   display: flex;
-  justify-content: center;
-  margin: 1rem 0rem;
+  flex-direction: column;
 }
 .add div {
+  width: 600px;
+  margin: 0 auto;
   display: flex;
-  margin: 1rem;
 }
-.add div input {
-  padding: 0.5rem 0.25rem;
-  margin: 0rem 0.15rem;
-  font-size: 1.5rem;
+.add div .inputContainer {
   border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  margin: 1.5rem auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.add div .inputContainer input {
+  border: none;
+  max-width: 300px;
   background-color: white;
+  font-size: 1.75rem;
+  padding: 0.25rem;
+  margin-right: 0.25rem;
+  border-radius: 2px;
 }
-.add div button {
-  padding: 0.5rem 0.75rem;
-  font-size: 1.5rem;
+.add div .inputContainer .number {
   border: none;
+  max-width: 70px;
+  background-color: white;
+  font-size: 1.75rem;
+  padding: 0.25rem;
+  margin-right: 0.25rem;
+  border-radius: 2px;
+}
+.add div .inputContainer button {
+  border: none;
+  width: 150px;
   color: white;
   background-color: #087990;
-}
-.add div .number {
-  text-align: center;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  padding: 0.25rem;
 }
 
-.todolist .tasks {
-  margin: 1rem;
+@media screen and (max-width: 600px) {
+  .add {
+    display: flex;
+    flex-direction: column;
+  }
+  .add div {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+  }
+  .add div .inputContainer {
+    border: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    margin: 1rem auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .add div .inputContainer input {
+    border: none;
+    max-width: 150px;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    margin-right: 0.25rem;
+    border-radius: 2px;
+  }
+  .add div .inputContainer .number {
+    border: none;
+    max-width: 50px;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    margin-right: 0.25rem;
+    border-radius: 2px;
+  }
+  .add div .inputContainer button {
+    border: none;
+    width: 100px;
+    color: white;
+    background-color: #087990;
+    border-radius: 2px;
+    font-size: 1rem;
+    padding: 0.25rem;
+  }
 }
-.todolist .sort {
+.todolist .sortAndTasks {
+  width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.todolist .sort button {
+.todolist .sortAndTasks .sort {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.todolist .sortAndTasks .sort button {
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
-  width: 15%;
+  width: 200px;
   margin: 0.25rem 0rem;
   border: none;
   color: white;
   background-color: #6c757d;
 }
+.todolist .sortAndTasks .tasks {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 
+@media screen and (max-width: 600px) {
+  .todolist .sortAndTasks {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .todolist .sortAndTasks .sort {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .todolist .sortAndTasks .sort button {
+    font-size: 1.2rem;
+    padding: 0.75rem 0;
+    width: 150px;
+    margin: 0.5rem 0rem;
+    border: none;
+    color: white;
+    background-color: #6c757d;
+  }
+  .todolist .sortAndTasks .tasks {
+    border: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .task .alreadyDone {
   opacity: 0.5;
 }
@@ -127,44 +320,96 @@
 .task div {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin: 0.35rem 0rem;
+  margin: 0.25rem 0rem;
   -webkit-animation: scaleUp 0.2s forwards;
           animation: scaleUp 0.2s forwards;
   transition: all 0.15s ease;
 }
-.task div p {
+.task div .taskContent p {
   font-size: 1.5rem;
   background-color: white;
   text-align: justify;
 }
-.task div .thing {
-  width: 20%;
+.task div .taskContent .thing {
+  width: 300px;
   padding-left: 0.5rem;
 }
-.task div .month {
-  width: 3%;
+.task div .taskContent .month {
+  width: 40px;
   text-align: right;
 }
-.task div .date {
-  width: 3%;
+.task div .taskContent .date {
+  width: 30px;
   text-align: left;
 }
 .task div button {
   font-size: 1.5rem;
   border: none;
-  margin: 0rem 0.2rem;
-  padding: 0.35rem 0.65rem;
+  margin: 0.25rem 0rem;
+  padding: 0rem 0.65rem;
 }
 .task div .done {
   background-color: #198754;
   color: white;
+  margin: 0.25rem 0.3rem;
 }
 .task div .remove {
   background-color: #dc3545;
   color: white;
 }
 
+@media screen and (max-width: 600px) {
+  .task .alreadyDone {
+    opacity: 0.5;
+  }
+  .task .alreadyDone p {
+    text-decoration: line-through;
+    text-decoration-thickness: 0.2rem;
+  }
+  .task div {
+    display: flex;
+    justify-content: center;
+    margin: 0.25rem 0rem;
+    -webkit-animation: scaleUp 0.2s forwards;
+            animation: scaleUp 0.2s forwards;
+    transition: all 0.15s ease;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .task div .taskContent p {
+    font-size: 1.2rem;
+    background-color: white;
+    text-align: justify;
+  }
+  .task div .taskContent .thing {
+    width: 120px;
+    padding-left: 0.25rem;
+  }
+  .task div .taskContent .month {
+    width: 30px;
+    text-align: right;
+  }
+  .task div .taskContent .date {
+    width: 25px;
+    text-align: left;
+  }
+  .task div button {
+    font-size: 1.2rem;
+    border: none;
+    margin: 0.25rem 0rem;
+    padding: 0rem 0.5rem;
+  }
+  .task div .done {
+    background-color: #198754;
+    color: white;
+    margin: 0.25rem 0.3rem;
+  }
+  .task div .remove {
+    background-color: #dc3545;
+    color: white;
+  }
+}
 @-webkit-keyframes scaleUp {
   from {
     transform: scale(0);
@@ -173,7 +418,6 @@
     transform: scale(1);
   }
 }
-
 @keyframes scaleUp {
   from {
     transform: scale(0);

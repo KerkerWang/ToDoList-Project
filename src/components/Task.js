@@ -38,9 +38,12 @@ const Task = ({ task, list }) => {
   return (
     <div className="task">
       <div className={task.done}>
-        <p className="thing">{task.thing}</p>
-        <p className="month">{task.month}/</p>
-        <p className="date">{task.date}</p>
+        <div className="taskContent">
+          <p className="thing">{task.thing}</p>
+          <p className="month">{task.month}/</p>
+          <p className="date">{task.date}</p>
+        </div>
+
         <button onClick={doneHandler} className="done">
           Done
         </button>

@@ -11,9 +11,11 @@ const Header = ({ username, setUsername }) => {
   };
   return (
     <div className="header">
-      <h1>{username}'s Todo List</h1>
-      <div className="clear">
-        <button onClick={clearHandler}>Clear my data</button>
+      <div className="title">
+        <div className="h1">
+          <h1>{username}'s Todo List</h1>
+          <button onClick={clearHandler}>Clear my data</button>
+        </div>
       </div>
     </div>
   );
