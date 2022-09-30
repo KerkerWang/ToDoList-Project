@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://kerkerwang.github.io/todolist",
+  "homepage": "https://kerkerwang.github.io/ToDoList-Project/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
